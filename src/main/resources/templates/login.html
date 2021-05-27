@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+
+    <title></title>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- fonts.googleapis.com/css -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do%7CRaleway:100,200,300,400,500,600,700,800,900%7CMontserrat:100,200,300,400,500,600,700,800,900');
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- main.css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body data-barba="wrapper">
+
+
+    <!-- HEADER -->
+    <main id="main" class="container">
+
+        <div class="absolute-navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light menu">
+                    <a class="navbar-brand" href="#">
+                        <figure class="logo-brand">
+                            <img src="img/icommerce-brand.jpg" alt="icommerce logo" class="img-fluid">
+                        </figure>
+                    </a>
+                    <button class="navbar-toggler " type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse" id="navbarNavAltMarkup" style="">
+                        <form>
+
+                            <div class="input-group search-icon">
+                                <div class="prelative flex-5">
+                                    <input type="text" class="search__input">
+                                    <div class="">
+                                        <svg id="Grupo_1381" class="icon__search__input" data-name="Grupo 1381" xmlns="http://www.w3.org/2000/svg" width="42" height="42.051" viewBox="0 0 42 42.051">
+                                            <g id="Grupo_1380" data-name="Grupo 1380">
+                                                <path id="Trazado_83" data-name="Trazado 83" d="M41.076,35.511l-7.818-7.818a3.919,3.919,0,0,0-2.708-1.124,2.912,2.912,0,0,0-1.124.2l-2.759-2.759a14.671,14.671,0,0,0,3.168-9.2A14.828,14.828,0,0,0,15.018,0,14.828,14.828,0,0,0,.2,14.818,14.653,14.653,0,0,0,4.543,25.292a14.8,14.8,0,0,0,19.672,1.226l2.759,2.759a3.986,3.986,0,0,0-.2,1.124,3.6,3.6,0,0,0,1.124,2.657l7.818,7.869a3.763,3.763,0,0,0,5.365,0A3.919,3.919,0,0,0,42.2,38.219,3.79,3.79,0,0,0,41.076,35.511ZM23.4,23.146a11.843,11.843,0,1,1,3.423-8.329A11.768,11.768,0,0,1,23.4,23.146ZM38.93,38.73a.741.741,0,0,1-1.022,0L30.04,30.913a.715.715,0,0,1,.511-1.226.608.608,0,0,1,.562.2l7.818,7.818a.741.741,0,0,1,0,1.022Z" transform="translate(-0.2 0)" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="m-l-10 navbar-nav mr-auto">
+
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Filtros
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Zona</a>
+                                    <a class="dropdown-item" href="#">Precio</a>
+                                    <a class="dropdown-item" href="#">Canal de Ventas</a>
+                                </div>
+                            </li>
+                            <div class="vr d-none d-lg-block"></div>
+
+                            <li class="nav-item nav-item-sm">
+                                <a class="nav-link" href="#">Artículos de interés</a>
+                            </li>
+                            <div class="vr d-none d-lg-block"></div>
+                            <li class="nav-item nav-item-sm">
+                                <a class="nav-link" href="#">Mi Cuenta</a>
+                            </li>
+                            <div class="vr d-none d-lg-block"></div>
+                            <li class="nav-item nav-item-sm">
+                                <a class="nav-link" href="#"><i class="fas fa-shopping-cart mr-1"></i>Carrito</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="login-dropw">
+                        <div class="d-flex justify-content-center dropdown">
+                            <button class="btn__nav__login dropdown-toggle" id="menu1" data-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.522" height="30.522" viewBox="0 0 38.522 38.522">
+                                    <path id="Trazado_78" data-name="Trazado 78" d="M-5.348-21.484a18.671,18.671,0,0,1,9.631,2.6,19.463,19.463,0,0,1,7.029,7.029,18.671,18.671,0,0,1,2.6,9.631,18.671,18.671,0,0,1-2.6,9.631,19.463,19.463,0,0,1-7.029,7.029,18.671,18.671,0,0,1-9.631,2.6,18.671,18.671,0,0,1-9.631-2.6,19.463,19.463,0,0,1-7.029-7.029,18.671,18.671,0,0,1-2.6-9.631,18.671,18.671,0,0,1,2.6-9.631,19.463,19.463,0,0,1,7.029-7.029A18.671,18.671,0,0,1-5.348-21.484Zm0,3.728a15.073,15.073,0,0,0-7.767,2.1,15.664,15.664,0,0,0-5.67,5.67,15.144,15.144,0,0,0-2.1,7.805,14.732,14.732,0,0,0,2.175,7.805A7.346,7.346,0,0,1-17.153,2.67a7.234,7.234,0,0,1,3.34-2.1,9.779,9.779,0,0,1-1.476-5.2,10,10,0,0,1,1.32-5.087,9.671,9.671,0,0,1,3.611-3.611,9.857,9.857,0,0,1,5.009-1.32,9.857,9.857,0,0,1,5.009,1.32A9.671,9.671,0,0,1,3.273-9.718a9.857,9.857,0,0,1,1.32,5.009A9.914,9.914,0,0,1,3.117.573a7.234,7.234,0,0,1,3.34,2.1A7.346,7.346,0,0,1,8.01,5.621a14.732,14.732,0,0,0,2.175-7.805,15.144,15.144,0,0,0-2.1-7.805,15.664,15.664,0,0,0-5.67-5.67A15.073,15.073,0,0,0-5.348-17.756ZM.865-4.708A5.983,5.983,0,0,0-.96-9.1a5.983,5.983,0,0,0-4.388-1.825A5.983,5.983,0,0,0-9.736-9.1a5.983,5.983,0,0,0-1.825,4.388A5.983,5.983,0,0,0-9.736-.32,5.983,5.983,0,0,0-5.348,1.5,5.983,5.983,0,0,0-.96-.32,5.983,5.983,0,0,0,.865-4.708ZM-15.289,9.737a16.092,16.092,0,0,0,4.621,2.641,15.236,15.236,0,0,0,5.32.932,15.236,15.236,0,0,0,5.32-.932A16.092,16.092,0,0,0,4.593,9.737V7.563a3.575,3.575,0,0,0-.7-2.136A3.267,3.267,0,0,0,2.03,4.145L.088,3.6A9.47,9.47,0,0,1-5.348,5.233,9.47,9.47,0,0,1-10.785,3.6l-1.942.544A3.267,3.267,0,0,0-14.59,5.427a3.575,3.575,0,0,0-.7,2.136Z" transform="translate(24.609 21.484)" fill="#dfdfdf"></path>
+                                </svg>
+                                <span class="m-l-10 " >
+                          ingreso de usuario
+                      </span>
+
+                            </button>
+
+
+                            <span class="caret"></span>
+                            <div class="dropdown-menu" role="menu" aria-labelledby="menu1">
+
+
+                                <div class="">
+                                    <div class="d-flex">
+                                        <button class="btn__default google">
+                                            Google
+                                        </button>
+                                        <button class="btn__default facebook">
+                                            Facebook
+                                        </button>
+
+                                    </div>
+                                    <div class="d-flex flex-column  m-t-20">
+                                        <div class="form-group">
+                                            <label>Nombre de usuario</label>
+                                            <input type="text" placeholder="Nombre usuario">
+                                        </div>
+
+                                        <div class="form-group" style="margin-bottom: 0 !important;">
+                                            <label>Clave de usuario</label>
+                                            <input type="text" placeholder="Clave usuario">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between" style="margin-top:3px">
+                                        <a href="" style="color:#000000;font-weight:400;font-style:italic">Olvide la clave</a>
+                                        <a href="registro.html" style="color:#000000;font-weight:400;font-style:italic">Registro</a>
+                                    </div>
+                                    <div class="form-group__btn m-t-25 m-b-10 d-flex justify-content-center">
+                                        <button class="btn__login__form">
+                                            Ingresar
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+                        </div>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light menu2">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup1">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">INICIO</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    COMPRAR
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    COTIZAR
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="cotizar-producto.html">Cotizar productos</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="publicar-producto.html">PUBLICAR</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="membresia.html">MEMBRESIA</a>
+                            </li>
+
+
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="chat.html">CHAT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NOSOTROS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="separator-content">
+
+
+            <!-- ================== Block Main Top ================== -->
+
+            <main>
+                <div class="container-fluid">
+
+
+
+                </div>
+
+                <div class="container">
+                    <div class="p-3 content-box-wrapper mt-4">
+                        <h2>Ingrese a su Cuenta o Registrese</h2>
+                        <div class="p-1  mt-4">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label>Nombre de usuario</label>
+                                        <input type="text" placeholder="Nombre usuario">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Clave de usuario</label>
+                                        <input type="text" placeholder="Clave usuario">
+                                    </div>
+                                    <div class="form-group__btn m-t-40">
+                                        <button class="btn__login__form">
+                                            Ingresar
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="height-100 form__group__login d-flex flex-column justify-content-center">
+                                        <button class="btn__default m-b-15">
+                                            Soy nuevo usuario
+                                        </button>
+
+                                        <button class="btn__default facebook  m-b-15">
+                                            Ingresar con Facebook
+                                        </button>
+
+                                        <button class="btn__default google">
+                                            Ingresar con Google
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group__forget mt-2">
+                                        <a hfre="">Olvide la clave</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+            <!-- ================== Block Main Bottom ================== -->
+
+
+
+
+            <div class="svg-absolute-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1788" height="233" viewBox="0 0 1788 233">
+                    <rect id="Rectángulo_225" data-name="Rectángulo 225" width="1788" height="233" fill="#eee" />
+                </svg>
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container bg-lineas p-4">
+            <div class="bg-white p-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2 class="titulo-footer mb-0">Nosotros</h2>
+                        <figure class="logo-footer mb-0">
+                            <a href="#"><img src="img/icommerce-footer.jpg" alt="icommerce logo" class="img-fluid" /></a>
+                        </figure>
+                        <p class="texto-footer">
+                            Somos una empresa dedicada a la cotización y venta de productos en línea.
+                        </p>
+                        <p class="texto-footer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3">
+                        <h2 class="titulo-footer">Compra</h2>
+                        <ul class="items-footer pl-0">
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Electrodomésticos</span></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Electrónica</span></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Ropa</span></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Accesorios</span></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Comida</span></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="titulo-footer">Cotiza</h2>
+                        <ul class="items-footer pl-0">
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Electrodomésticos</span></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Electrónica</span></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Ropa</span></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Accesorios</span></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Comida</span></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-chevron-right"><span class="subtitulo-footer">Especiales</span></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <h2 class="titulo-footer">Contáctanos</h2>
+                        <div class="social-icons">
+                            <a href="#"><i class="fas fa-phone-square-alt"></i></a>
+                            <a href="#">
+                                <p>1-800-999-999</p>
+                            </a>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a><br />
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a><br />
+                            <a href="#"><i class="fab fa-youtube-square"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row py-4 bg-black">
+                <div class="col-md-8">
+                    <span class="copyright-footer">©2020 iCommerce Cia Ltda. | Diseño por <u>Banana Digital</u></span>
+                </div>
+                <div class="col-6 col-md-2 d-flex align-items-center mt-3 pt-md-0">
+                    <label class="label-tienda mr-2">Ir a Tienda</label>
+                    <select class="form-control custom-select custom-select-sm" id="exampleFormControlSelect1">
+                        <option>Tienda 1</option>
+                        <option>Tienda 2</option>
+                        <option>Tienda 3</option>
+                        <option>Tienda 4</option>
+                        <option>Tienda 5</option>
+                    </select>
+                </div>
+                <div class="col-6 col-md-2 d-flex align-items-center mt-3 pt-md-0">
+                    <figure class="pago-icono">
+                        <img src="img/paypal.png" alt="" class="img-fluid" />
+                    </figure>
+                    <figure class="pago-icono">
+                        <img src="img/visa.png" alt="" class="img-fluid" />
+                    </figure>
+                    <figure class="pago-icono">
+                        <img src="img/discover.png" alt="" class="img-fluid" />
+                    </figure>
+                    <figure class="pago-icono">
+                        <img src="img/mastercard.png" alt="" class="img-fluid" />
+                    </figure>
+                    <figure class="pago-icono">
+                        <img src="img/american-express.png" alt="" class="img-fluid" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+
+    <!-- jquery.slim.min.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- script.js -->
+    <script>
+        $('.navbar-toggler').click(function() {
+            $('#navbarNavAltMarkup, #navbarNavAltMarkup1').toggle()
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        if ($(window).width() < 768) {
+            $('.responsive').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
+
+        }
+    </script>
+    <script>
+        // Set Error Message
+        function setError(input, errormsg) {
+            const formGroup = input.parentElement;
+            const inputAlert = formGroup.querySelector(".input-alert");
+            formGroup.className = "form-group error";
+            inputAlert.innerText = errormsg;
+        }
+
+        // Set Success Message
+        function setSuccess(input) {
+            const formGroup = input.parentElement;
+            formGroup.className = "form-group success";
+        }
+
+        // Check Valid Email
+        function validEmail(email) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        // Form Validation Check
+        function validateForm(form) {
+
+            if (form.fullname.value.trim() === "") {
+
+                setError(form.fullname, "Titúlo no puede quedar vacío");
+                return false;
+            } else {
+                setSuccess(form.fullname);
+            }
+
+            if (form.email.value.trim() === "") {
+                setError(form.email, "Email cannot be blank");
+                return false;
+            } else if (!validEmail(form.email.value.trim())) {
+                setError(form.email, "Email is not valid");
+                return false;
+            } else {
+                setSuccess(form.email);
+            }
+
+            if (form.message.value.trim() === "") {
+                setError(form.message, "Message cannot be blank");
+                return false;
+            } else {
+                setSuccess(form.message);
+            }
+
+            return true;
+        }
+    </script>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+
+
+
+
+</body>
+
+</html>

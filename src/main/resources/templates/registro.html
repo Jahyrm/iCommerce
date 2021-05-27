@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+
+    <title>iCommerce | Registro</title>
+    <meta charset="utf-8">
+    
+</head>
+
+<body data-barba="wrapper">
+
+	<form th:action="@{/auth/registro}" th:object="${usuario}" method="post">
+    	<fieldset>
+        <legend>Datos del usuario</legend>
+        <table>
+            <tr>
+                <td><label th:text="#{form.user.nombre}">Nombre: </label></td>
+                <td><input type="text" th:field="*{nombre}" /></td>
+            </tr>
+            <tr>
+                <td><label th:text="#{form.user.apellido}">Apellido: </label></td>
+                <td><input type="text" th:field="*{apellido}" /></td>
+            </tr>
+            <tr>
+                <td><label th:text="#{form.user.usuario}">Usuario: </label></td>
+                <td><input type="text" th:field="*{usuario}" /></td>
+            </tr>
+            <tr>
+                <td><label th:text="#{form.user.correo}">Correo: </label></td>
+                <td><input type="text" th:field="*{correo}" /></td>
+            </tr>
+            <tr>
+                <td><label th:text="#{form.user.pass}">Password: </label></td>
+                <td><input type="password" th:field="*{password}" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Registrar...</button>
+                </td>
+            </tr>
+        </table>
+    	</fieldset>
+	</form>
+
+</body>
+
+</html>

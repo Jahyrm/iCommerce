@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+/****Navbar****/
+.search-icon .form-control {
+  border-radius: 0;
+  border-right: transparent;
+}
+
+.menu .search-icon .input-group-text {
+  background-color: transparent;
+  border-left: 0;
+  border-radius: 0;
+}
+
+.menu .search-icon .fa-search {
+  color: #ced4da;
+}
+
+.menu .navbar-nav .dropdown-item {
+  padding: 0 0.5rem;
+}
+
+.menu .navbar-nav .nav-item-sm {
+  font-size: 13px;
+}
+
+.menu .vr {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  height: 15px;
+  margin: auto 0;
+  width: 1px;
+}
+
+.menu2 {
+  border-bottom: 5px solid #333333;
+}
+
+.menu2 .nav-link {
+  font-weight: 500;
+}
+
+/****Breadcrumb****/
+.breadcrumb {
+  background-color: transparent;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.breadcrumb a {
+  color: #6c757d;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/****Bienvenida****/
+.btn-inicio,
+.btn-registrate {
+  cursor: pointer;
+}
+
+.bg-lineas {
+  background-image: url("../images/assets/footer-lineas.png");
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+/****Footer****/
+
+footer {
+  padding: 10px;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+footer a {
+  color: #212529;
+}
+
+.content-wrap {
+  flex: 1 0 auto;
+}
+
+.titulo-footer {
+  font-size: 18px;
+}
+
+.logo-footer {
+  max-width: 150px;
+}
+
+.texto-footer {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.items-footer li {
+  list-style: none;
+}
+
+.items-footer li .fas {
+  font-size: 10px;
+}
+
+.subtitulo-footer {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 3px;
+}
+
+.iconos-contacto {
+  text-align: center;
+}
+
+.social-icons p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.social-icons .fas,
+.social-icons .fab {
+  color: #939393;
+  font-size: 28px;
+}
+
+.social-icons .fas:hover {
+  color: #000000;
+}
+
+.social-icons .fab:hover {
+  color: #000000;
+}
+
+.copyright-footer {
+  color: #c2c2c2;
+  font-size: 13px;
+}
+
+.logo-brand {
+  max-width: 200px;
+}
+
+.label-tienda {
+  color: #ffffff;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.pago-icono {
+  margin: 0 3px 0 0;
+}
+
+/******Producto*******/
+
+.br-1 {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.swiper-new .swiper-slide {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.gallery-top {
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs {
+  box-sizing: border-box;
+  height: 20%;
+  padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  height: 100%;
+  opacity: 0.4;
+  width: 25%;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.gallery-top {
+  border: 1px solid #939393;
+}
+
+.titulo-producto {
+  font-size: 26px;
+}
+
+.texto-producto {
+  font-size: 14px;
+}
+
+.texto-producto .fa-battery-quarter {
+  font-size: 18px;
+}
+
+.producto-stock {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.precio-producto {
+  color: #00aac7;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.disponibilidad-producto {
+  color: #939393;
+}
+
+.btn-contacto {
+  background-color: #333333;
+  border-radius: 0;
+  border: 0;
+}
+
+.titulo-vendedor {
+  font-size: 24px;
+}
+
+.texto-vendedor {
+  font-size: 14px;
+}
+
+.subtitulo-vendedor {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contacto-vendedor {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.icon-circle {
+  align-items: center;
+  background-color: #eeeeee;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 50px;
+}
+
+.link-icono:hover > .icon-circle {
+  background-color: #de2565;
+  color: #ffffff;
+}
+
+.accion-producto {
+  font-size: 14px;
+}
+
+.product-tabs .nav-tabs {
+  background-color: #f5f5f5;
+}
+
+.titulo-sugerido {
+  color: #363636;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.producto-sugerido img {
+  border: 2px solid #f5f5ff;
+}
+
+.producto-sugerido:hover > .circulo-sugerido {
+  background-color: #de2565;
+}
+
+.circulo-sugerido {
+  align-items: center;
+  background-color: #3fc2df;
+  border-radius: 50%;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  left: 4%;
+  padding: 3%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 50px;
+}
+
+.nuevo-sugerido {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.nombre-sugerido {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.precio-sugerido {
+  color: #3fc2df;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*****Home*****/
+.categoria-card p {
+  max-width: 250px;
+}
+.categoria-vendedor {
+  color: #7d7d7d;
+  font-size: 13px;
+}
+.categoria-item {
+  color: #333333;
+  font-size: 18px;
+}
+.categoria-descripcion {
+  color: #464646;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.categoria-todo {
+  color: #464646;
+  font-size: 13px;
+}
+
+.icon-circle-lg {
+  align-items: center;
+  background-color: #de2565;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-size: 24px;
+  height: 70px;
+  justify-content: center;
+  width: 70px;
+}
+
+/*******Busqueda******/
+
+.titulo-busqueda {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.subtitulo-busqueda {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.numero {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.icono-mapa {
+  color: #eb2629;
+  font-size: 21px;
+}
+
+.busqueda-texto {
+  font-size: 14px;
+  max-width: 400px;
+}
+
+.btn-grupo .btn {
+  background-color: #f5f5f5;
+  border-radius: 0;
+  border: 1px solid #dfdddd;
+  color: #252525;
+}
+
+.btn-grupo .btn-chat {
+  background-color: #ffffff;
+  border-radius: 0;
+  border: 1px solid #dfdddd;
+  color: #448ccb;
+}
+
+.titulo-similar {
+  color: #555555;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/****Registro****/
+.titulo-registro {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.bg-registro {
+  background-color: #3a4b54;
+}
+
+.form-registro {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.form-registro .form-control {
+  border-radius: 0;
+}
+
+.form-registro label {
+  color: #ffffff;
+}
+
+.btn-registro {
+  background-color: #40a36b;
+  border-radius: 0;
+  border: 0;
+}
+
+.btn-facebook {
+  background-color: #375a99;
+  border-radius: 0;
+  border: 0;
+}
+
+.btn-gmail {
+  background-color: #4facef;
+  border-radius: 0;
+  border: 0;
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    padding: 0 0.5rem;
+  }
+  /****Breadcrumb****/
+  .breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .titulo-producto {
+    font-size: 21px;
+  }
+  .precio-producto {
+    margin-bottom: 0;
+  }
+  .titulo-vendedor {
+    font-size: 21px;
+  }
+  .accion-producto {
+    font-size: 12px;
+  }
+
+  .icon-circle {
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+  }
+  .product-tabs {
+    font-size: 13px;
+  }
+  .titulo-sugerido {
+    font-size: 21px;
+  }
+  .precio-sugerido {
+    font-size: 14px;
+  }
+  .icon-circle-lg {
+    width: 50px;
+    height: 50px;
+  }
+  .categoria-item {
+    font-size: 16px;
+  }
+  .categoria-descripcion {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .btn-grupo .btn {
+    font-size: 13px;
+  }
+  .subtitulo-busqueda {
+    font-size: 16px;
+  }
+  .busqueda-texto {
+    margin-bottom: 5px;
+  }
+}
+
+/* @media (max-width: 767.98px) { }
+
+@media (max-width: 991.98px) { }
+
+@media (max-width: 1199.98px) { } */
